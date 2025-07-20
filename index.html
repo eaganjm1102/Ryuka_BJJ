@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="preload" as="image" href="Class-Photo_waifu2x_art_noise1_scale.png">
+    <link rel="preload" as="image" href="Class-Photo.png">
     <link rel="preload" as="image" href="Ryuka-JiuJitsu.png">
     <meta name="color-scheme" content="dark">
     <meta charset="UTF-8">
@@ -9,7 +10,7 @@
     <title>Ryuka Jiu Jitsu - Modern BJJ Training</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        
+
         :root {
             --gold: #FFD700;
             --gold-dark: #B8860B;
@@ -54,15 +55,25 @@
             width: 100%;
             height: 100%;
             background: radial-gradient(circle at 20% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.15) 0%, transparent 50%),
-                        radial-gradient(circle at 40% 40%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
+                radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
             animation: float 20s ease-in-out infinite;
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            33% { transform: translateY(-20px) rotate(1deg); }
-            66% { transform: translateY(-10px) rotate(-1deg); }
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            33% {
+                transform: translateY(-20px) rotate(1deg);
+            }
+
+            66% {
+                transform: translateY(-10px) rotate(-1deg);
+            }
         }
 
         /* Header */
@@ -197,8 +208,13 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         .container {
@@ -208,7 +224,7 @@
         }
 
         /* HOME SECTION STYLES */
-        
+
         /* Hero Section */
         .hero {
             height: 100vh;
@@ -249,8 +265,13 @@
         }
 
         @keyframes glow {
-            from { filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5)); }
-            to { filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.8)); }
+            from {
+                filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+            }
+
+            to {
+                filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.8));
+            }
         }
 
         .hero p {
@@ -299,6 +320,7 @@
                 opacity: 0;
                 transform: translateY(50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -310,7 +332,8 @@
             padding: 4rem 0;
             position: relative;
         }
-    /* Enhanced Hero Background Slideshow */
+
+        /* Enhanced Hero Background Slideshow */
         .hero-slideshow {
             position: absolute;
             top: 0;
@@ -339,7 +362,8 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center 30%; /* Shows more of the top portion - better for people photos */
+            object-position: center 30%;
+            /* Shows more of the top portion - better for people photos */
             filter: brightness(0.85) contrast(1.0) saturate(1.1);
             /* Enhanced image quality settings */
             image-rendering: -webkit-optimize-contrast;
@@ -347,7 +371,8 @@
             image-rendering: high-quality;
             -webkit-bac: hidden;
             backface-visibility: hidden;
-            transform: scale(1.02) translateZ(0); /* Slight scale to eliminate gaps */
+            transform: scale(1.02) translateZ(0);
+            /* Slight scale to eliminate gaps */
             /* Hardware acceleration for smooth transitions */
             will-change: transform, opacity;
             backface-visibility: hidden;
@@ -363,25 +388,26 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(
-                135deg,
-                rgba(0, 0, 0, 0.2) 0%,
-                rgba(0, 0, 0, 0.3) 30%,
-                rgba(0, 0, 0, 0.4) 60%,
-                rgba(0, 0, 0, 0.6) 100%
-            );
+            background: linear-gradient(135deg,
+                    rgba(0, 0, 0, 0.2) 0%,
+                    rgba(0, 0, 0, 0.3) 30%,
+                    rgba(0, 0, 0, 0.4) 60%,
+                    rgba(0, 0, 0, 0.6) 100%);
             z-index: 1;
             pointer-events: none;
         }
+
         /* Ensure hero content stays above the slideshow */
         .hero-content {
             text-align: center;
             max-width: 800px;
-            padding: 2rem; /* Changed from 0.5rem */
+            padding: 2rem;
+            /* Changed from 0.5rem */
             animation: fadeInUp 1s ease;
             position: relative;
             z-index: 2;
         }
+
         .section-title {
             font-size: 3rem;
             font-weight: 800;
@@ -454,6 +480,7 @@
             color: rgba(255, 255, 255, 0.8);
             line-height: 1.6;
         }
+
         /* Responsive Image Containers */
         .card div[style*="height: 200px"],
         .card div[style*="height: 150px"] {
@@ -476,6 +503,7 @@
             transform: scale(1.05);
             filter: brightness(1.1) contrast(1.1);
         }
+
         /* Specific image positioning */
         img[src*="Class-Photo"] {
             object-position: center 20% !important;
@@ -485,7 +513,7 @@
             object-position: center 30% !important;
         }
 
-        img[src*="Competition"], 
+        img[src*="Competition"],
         img[src*="Naga"] {
             object-position: center 40% !important;
         }
@@ -497,6 +525,7 @@
         img[src*="Smiling"] {
             object-position: center 15% !important;
         }
+
         /* Global Image Quality Enhancement */
         img {
             image-rendering: -webkit-optimize-contrast;
@@ -508,7 +537,8 @@
         }
 
         /* High-DPI Display Optimization */
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+        @media (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx) {
             img {
                 image-rendering: -webkit-optimize-contrast;
                 image-rendering: pixelated;
@@ -519,7 +549,8 @@
         .card img,
         .instructor-avatar img {
             object-fit: cover;
-            object-position: center top; /* Better for portrait photos */
+            object-position: center top;
+            /* Better for portrait photos */
             border-radius: 10px;
             transition: transform 0.3s ease;
         }
@@ -528,6 +559,7 @@
         .instructor-card:hover img {
             transform: scale(1.03);
         }
+
         /* Video Section */
         .video-container {
             position: relative;
@@ -585,7 +617,7 @@
             margin: 0 auto;
         }
 
-     
+
 
         .lineage-item {
             display: flex;
@@ -614,7 +646,7 @@
             box-shadow: 0 15px 30px rgba(255, 215, 0, 0.2);
         }
 
-        
+
 
         .lineage-name {
             color: var(--gold);
@@ -665,15 +697,19 @@
             font-size: 3rem;
             border: 4px solid rgba(255, 215, 0, 0.3);
             transition: all 0.3s ease;
-            overflow: hidden; /*Ensures perfect circle crop */
+            overflow: hidden;
+            /*Ensures perfect circle crop */
         }
+
         .instructor-avatar img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center 20%; /* Shows face better in circle crop */
+            object-position: center 20%;
+            /* Shows face better in circle crop */
             border-radius: 50%;
         }
+
         .instructor-card:hover .instructor-avatar {
             transform: scale(1.05);
             border-color: var(--gold);
@@ -1137,18 +1173,22 @@
             transform: translateY(-2px);
             box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
         }
+
         /* Contact page image enhancement - ADD THIS HERE */
-        
+
         #contact .card-grid .card div[style*="height: 150px"] {
             height: 300px !important;
         }
-     /* Fix OpenMat image positioning */
+
+        /* Fix OpenMat image positioning */
         img[src*="OpenMat"] {
             object-position: center 45% !important;
         }
+
         #contact .card-grid .card div[style*="height: 150px"] img {
             height: 300px !important;
         }
+
         /* Floating Action Button */
         .fab {
             position: fixed;
@@ -1173,9 +1213,17 @@
         }
 
         @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
-            70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(255, 215, 0, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+            }
         }
 
         /* Footer */
@@ -1242,28 +1290,30 @@
                 font-size: 2.5rem;
                 line-height: 1.2;
             }
-            
+
             .hero-content {
                 padding: 1rem;
             }
-            
+
             .hero-slide img {
-                object-position: center 25% !important; /* Better mobile cropping */
+                object-position: center 25% !important;
+                /* Better mobile cropping */
                 filter: brightness(1.0) contrast(1.0) saturate(1.2);
             }
-            
+
             .card-grid {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
             }
-            
+
             .instructor-avatar {
                 width: 120px;
                 height: 120px;
             }
-            
+
             .slides-wrapper {
-                height: 300px; /* Smaller on mobile */
+                height: 300px;
+                /* Smaller on mobile */
             }
         }
 
@@ -1271,20 +1321,20 @@
             .hero h1 {
                 font-size: 2rem;
             }
-            
+
             .hero p {
                 font-size: 1rem;
             }
-            
+
             .section-title {
                 font-size: 1.8rem;
             }
-            
+
             .card {
                 padding: 1.5rem;
             }
         }
-        
+
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
@@ -1363,11 +1413,17 @@
         }
 
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
+
 <body>
     <!-- Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
@@ -1381,7 +1437,7 @@
     <header id="header">
         <div class="header-content">
             <div class="logo">
-                <img src="Ryuka-JiuJitsu.png" alt="Ryuka Logo" loading = "lazy" decoding="async">
+                <img src="Ryuka-JiuJitsu.png" alt="Ryuka Logo" loading="lazy" decoding="async">
                 <div class="logo-text">RYUKA JIU JITSU</div>
             </div>
             <nav>
@@ -1398,70 +1454,74 @@
 
     <!-- Main Content -->
     <main>
-       <section id="home" class="content-section active">
+        <section id="home" class="content-section active">
             <!-- Hero Section -->
             <div class="hero">
                 <!-- Background Slideshow -->
                 <div class="hero-slideshow">
                     <div class="hero-slide active">
-                        <img src="Class-Photo_waifu2x_art_noise1_scale.png" alt="BJJ Training" loading = "eager" decoding="async">
+                        <img src="Class-Photo.png" alt="BJJ Training" loading="eager"
+                            decoding="async">
                     </div>
                     <div class="hero-slide">
-                        <img src="Manny-Promotion_waifu2x_art_noise1_scale.png" alt="BJJ Training" loading = "eager" decoding="async">
+                        <img src="Manny-Promotion_waifu2x_art_noise1_scale.png" alt="BJJ Training" loading="eager"
+                            decoding="async">
                     </div>
                     <div class="hero-slide">
-                        <img src="Chris-Teaching-Kids.jpg" alt="BJJ Training" loading = "eager" decoding="async">
+                        <img src="Chris-Teaching-Kids.jpg" alt="BJJ Training" loading="eager" decoding="async">
                     </div>
                     <div class="hero-slide">
-                        <img src="All_levels_Curtis.jpg" alt="BJJ Training" loading = "eager" decoding="async">
+                        <img src="All_levels_Curtis.jpg" alt="BJJ Training" loading="eager" decoding="async">
                     </div>
                     <div class="hero-slide">
-                        <img src="Kids-BJJ.jpg" alt="BJJ Training" loading = "eager" decoding="async">
+                        <img src="Kids-BJJ.jpg" alt="BJJ Training" loading="eager" decoding="async">
                     </div>
                     <div class="hero-slide">
-                        <img src="Parker-Naga(2).png" alt="BJJ Training" loading = "eager" decoding="async">
+                        <img src="Parker-Naga.png" alt="BJJ Training" loading="eager" decoding="async">
                     </div>
                     <div class="hero-slide">
-                        <img src="Triple-Crown.jpg" alt="BJJ Training" loading = "eager" decoding="async">
+                        <img src="Triple-Crown.jpg" alt="BJJ Training" loading="eager" decoding="async">
                     </div>
                     <div class="hero-slide">
-                        <img src="Rafe_waifu2x_art_noise1_scale.png" alt="BJJ Training" loading = "eager" decoding="async">
+                        <img src="Rafe_waifu2x_art_noise1_scale.png" alt="BJJ Training" loading="eager"
+                            decoding="async">
                     </div>
                     <div class="hero-slide">
-                        <img src="Zhen-Vibes_waifu2x_photo_noise2_scale.png" alt="BJJ Training" loading = "eager" decoding="async">
+                        <img src="Zhen-Vibes_waifu2x_photo_noise2_scale.png" alt="BJJ Training" loading="eager"
+                            decoding="async">
                     </div>
                     <div class="hero-slide">
-                        <img src="All_levels_Kendall.JPG" alt="BJJ Training" loading = "eager" decoding="async">
+                        <img src="All_levels_Kendall.JPG" alt="BJJ Training" loading="eager" decoding="async">
                     </div>
                     <div class="hero-slide">
-                        <img src="OpenMat.jpg" alt="BJJ Training" loading = "eager" decoding="async">
+                        <img src="OpenMat.jpg" alt="BJJ Training" loading="eager" decoding="async">
                     </div>
                     <div class="hero-slide">
-                        <img src="Manny-Smiling.jpg" alt="BJJ Training" loading = "eager" decoding="async">
+                        <img src="Manny-Smiling.jpg" alt="BJJ Training" loading="eager" decoding="async">
                     </div>
                     <div class="hero-slide">
-                        <img src="Team-NoGi.jpg" alt="BJJ Training" loading = "eager" decoding="async">
+                        <img src="Team-NoGi.jpg" alt="BJJ Training" loading="eager" decoding="async">
                     </div>
                     <div class="hero-slide">
-                        <img src="arm-bar.jpg" alt="BJJ Training" loading = "eager" decoding="async">
+                        <img src="arm-bar.jpg" alt="BJJ Training" loading="eager" decoding="async">
                     </div>
                     <div class="hero-slide">
-                        <img src="Curtis.jpg" alt="BJJ Training" loading = "eager" decoding="async">
+                        <img src="Curtis.jpg" alt="BJJ Training" loading="eager" decoding="async">
                     </div>
                     <div class="hero-slide">
-                        <img src="Chris-Nitta.jpg" alt="BJJ Training" loading = "eager" decoding="async">
+                        <img src="Chris-Nitta.jpg" alt="BJJ Training" loading="eager" decoding="async">
                     </div>
                     <div class="hero-slide">
-                        <img src="Parker-Teaching.jpg" alt="BJJ Training" loading = "eager" decoding="async">
+                        <img src="Parker-Teaching.jpg" alt="BJJ Training" loading="eager" decoding="async">
                     </div>
                     <div class="hero-slide">
-                        <img src="Kiril-Joey.png" alt="BJJ Training" loading = "eager" decoding="async">
+                        <img src="Kiril-Joey.png" alt="BJJ Training" loading="eager" decoding="async">
                     </div>
                     <div class="hero-slide">
-                        <img src="Ryuka-JiuJitsu.png" alt="BJJ Training" loading = "eager" decoding="async">
+                        <img src="Ryuka-JiuJitsu.png" alt="BJJ Training" loading="eager" decoding="async">
                     </div>
                 </div>
-                
+
                 <div class="hero-content" style="position: relative; z-index: 2;">
                     <h1>RYUKA JIU JITSU</h1>
                     <p>伝統に根ざし、絆で育つ</p>
@@ -1475,38 +1535,47 @@
                 <div class="container">
                     <h2 class="section-title animate-on-scroll">About Ryuka Jiu Jitsu</h2>
                     <p class="section-subtitle animate-on-scroll">
-                        Discover the rich tradition, prestigious lineage, and dedicated instructors that make Ryuka Jiu Jitsu a premier Brazilian Jiu Jitsu academy in Hawaii.
+                        Discover the rich tradition, prestigious lineage, and dedicated instructors that make Ryuka Jiu
+                        Jitsu a premier Brazilian Jiu Jitsu academy in Hawaii.
                     </p>
-                    
+
                     <div class="card-grid">
                         <div class="card animate-on-scroll">
-                            <div style="width: 100%; height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 1rem;">
-                                <img src="Helio-Gracie.jpg" alt="Authentic Lineage" loading = "lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div
+                                style="width: 100%; height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 1rem;">
+                                <img src="Helio-Gracie.jpg" alt="Authentic Lineage" loading="lazy" decoding="async"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <h3>🥋 Authentic Lineage</h3>
                         </div>
                         <div class="card animate-on-scroll">
-                            <div style="width: 100%; height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 1rem;">
-                                <img src="Parker-Naga.JPG" alt="Competition Excellence" loading = "lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div
+                                style="width: 100%; height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 1rem;">
+                                <img src="Parker-Naga.png" alt="Competition Excellence" loading="lazy" decoding="async"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <h3>🏆 Competition Excellence</h3>
                         </div>
                         <div class="card animate-on-scroll">
-                            <div style="width: 100%; height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 1rem;">
-                                <img src="Chris-Teaching-Kids.jpg" alt="Family Friendly Training" loading = "lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div
+                                style="width: 100%; height: 200px; overflow: hidden; border-radius: 10px; margin-bottom: 1rem;">
+                                <img src="Chris-Teaching-Kids.jpg" alt="Family Friendly Training" loading="lazy"
+                                    decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <h3>👨‍👩‍👧‍👦 Family Friendly</h3>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <!-- History Section -->
             <div class="home-section" id="history-section">
                 <div class="container">
                     <h2 class="section-title animate-on-scroll">Our History</h2>
                     <p class="section-subtitle animate-on-scroll">
-                        Ryuka Jiu Jitsu was born from the rich tradition of Hawaii Judo Academy (HJA). While our Jiu Jitsu competitors have long represented HJA with honor and excellence, we recognized the need to showcase our dedicated Brazilian Jiu Jitsu program.
+                        Ryuka Jiu Jitsu was born from the rich tradition of Hawaii Judo Academy (HJA). While our Jiu
+                        Jitsu competitors have long represented HJA with honor and excellence, we recognized the need to
+                        showcase our dedicated Brazilian Jiu Jitsu program.
                     </p>
                 </div>
             </div>
@@ -1515,19 +1584,26 @@
                 <div class="container">
                     <h2 class="section-title animate-on-scroll">Our Brazilian Jiu Jitsu Lineage</h2>
                     <p class="section-subtitle animate-on-scroll">
-                        Our Brazilian Jiu Jitsu lineage traces back through generations of legendary masters, each contributing to the evolution and refinement of the gentle art. This direct lineage ensures authentic technique and traditional values.
+                        Our Brazilian Jiu Jitsu lineage traces back through generations of legendary masters, each
+                        contributing to the evolution and refinement of the gentle art. This direct lineage ensures
+                        authentic technique and traditional values.
                     </p>
-                    
+
                     <div class="lineage-timeline">
                         <!-- Helio Gracie -->
                         <div class="lineage-item animate-on-scroll">
                             <div class="lineage-dot"></div>
                             <div class="lineage-content">
-                                <img src="helio-gracie.jpg" alt="Helio Gracie" loading = "lazy" decoding="async" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; float: left; margin-right: 1.5rem; margin-bottom: 1rem; border: 3px solid var(--gold);">
+                                <img src="helio-gracie.jpg" alt="Helio Gracie" loading="lazy" decoding="async"
+                                    style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; float: left; margin-right: 1.5rem; margin-bottom: 1rem; border: 3px solid var(--gold);">
                                 <div class="lineage-name">Helio Gracie</div>
                                 <div class="lineage-title">Co-Founder of Brazilian Jiu Jitsu (1913-2009)</div>
                                 <div class="lineage-description">
-                                    Helio Gracie co-founded Brazilian Jiu Jitsu alongside his brother Carlos. Known for adapting traditional Japanese jujitsu techniques to favor leverage and technique over strength, Helio revolutionized martial arts. He competed in legendary matches and established the foundation of modern BJJ, emphasizing that a smaller, weaker person could defend against larger opponents through proper technique.
+                                    Helio Gracie co-founded Brazilian Jiu Jitsu alongside his brother Carlos. Known for
+                                    adapting traditional Japanese jujitsu techniques to favor leverage and technique
+                                    over strength, Helio revolutionized martial arts. He competed in legendary matches
+                                    and established the foundation of modern BJJ, emphasizing that a smaller, weaker
+                                    person could defend against larger opponents through proper technique.
                                 </div>
                             </div>
                         </div>
@@ -1536,11 +1612,16 @@
                         <div class="lineage-item animate-on-scroll">
                             <div class="lineage-dot"></div>
                             <div class="lineage-content">
-                                <img src="rickson-gracie.jpg" alt="Rickson Gracie" loading = "lazy" decoding="async" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; float: left; margin-right: 1.5rem; margin-bottom: 1rem; border: 3px solid var(--gold);">
+                                <img src="rickson-gracie.jpg" alt="Rickson Gracie" loading="lazy" decoding="async"
+                                    style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; float: left; margin-right: 1.5rem; margin-bottom: 1rem; border: 3px solid var(--gold);">
                                 <div class="lineage-name">Rickson Gracie</div>
                                 <div class="lineage-title">Son of Helio Gracie, Undefeated Champion</div>
                                 <div class="lineage-description">
-                                    Rickson Gracie is widely considered one of the greatest Brazilian Jiu Jitsu practitioners of all time. With an alleged undefeated record of over 400 fights, Rickson dominated both BJJ and mixed martial arts competitions. Known for his impeccable technique, breathing methods, and mental approach to combat, he elevated the art to new levels and trained champions worldwide.
+                                    Rickson Gracie is widely considered one of the greatest Brazilian Jiu Jitsu
+                                    practitioners of all time. With an alleged undefeated record of over 400 fights,
+                                    Rickson dominated both BJJ and mixed martial arts competitions. Known for his
+                                    impeccable technique, breathing methods, and mental approach to combat, he elevated
+                                    the art to new levels and trained champions worldwide.
                                 </div>
                             </div>
                         </div>
@@ -1550,12 +1631,18 @@
                             <div class="lineage-dot"></div>
                             <div class="lineage-content">
                                 <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
-                                    <img src="fabio-santos.jpg" alt="Fabio Santos" loading = "lazy" decoding="async" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; flex-shrink: 0; border: 3px solid var(--gold);">
+                                    <img src="fabio-santos.jpg" alt="Fabio Santos" loading="lazy" decoding="async"
+                                        style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; flex-shrink: 0; border: 3px solid var(--gold);">
                                     <div style="flex: 1;">
                                         <div class="lineage-name">Fabio Santos</div>
                                         <div class="lineage-title">Black Belt under Rickson Gracie</div>
                                         <div class="lineage-description">
-                                            Fabio Santos is a renowned Brazilian Jiu Jitsu black belt under Rickson Gracie, known for his technical precision and teaching ability. Having trained directly under the Gracie family, Fabio has dedicated his life to preserving and passing on authentic Brazilian Jiu Jitsu techniques. He has produced numerous champions and continues to influence the art through his teaching methodology.
+                                            Fabio Santos is a renowned Brazilian Jiu Jitsu black belt under Rickson
+                                            Gracie, known for his technical precision and teaching ability. Having
+                                            trained directly under the Gracie family, Fabio has dedicated his life to
+                                            preserving and passing on authentic Brazilian Jiu Jitsu techniques. He has
+                                            produced numerous champions and continues to influence the art through his
+                                            teaching methodology.
                                         </div>
                                     </div>
                                 </div>
@@ -1566,11 +1653,16 @@
                         <div class="lineage-item animate-on-scroll">
                             <div class="lineage-dot"></div>
                             <div class="lineage-content">
-                                <img src="mike-fowler.jpg" alt="Mike Fowler" loading = "lazy" decoding="async" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; float: left; margin-right: 1.5rem; margin-bottom: 1rem; border: 3px solid var(--gold);">
+                                <img src="mike-fowler.jpg" alt="Mike Fowler" loading="lazy" decoding="async"
+                                    style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; float: left; margin-right: 1.5rem; margin-bottom: 1rem; border: 3px solid var(--gold);">
                                 <div class="lineage-name">Mike Fowler</div>
                                 <div class="lineage-title">Black Belt under Fabio Santos</div>
                                 <div class="lineage-description">
-                                    Mike Fowler is a respected Brazilian Jiu Jitsu black belt who trained under Fabio Santos, carrying forward the traditional Gracie lineage. Known for his dedication to technique and his ability to develop students at all levels, Mike has been instrumental in spreading authentic BJJ throughout his teaching career. His approach emphasizes the fundamental principles that make Brazilian Jiu Jitsu so effective.
+                                    Mike Fowler is a respected Brazilian Jiu Jitsu black belt who trained under Fabio
+                                    Santos, carrying forward the traditional Gracie lineage. Known for his dedication to
+                                    technique and his ability to develop students at all levels, Mike has been
+                                    instrumental in spreading authentic BJJ throughout his teaching career. His approach
+                                    emphasizes the fundamental principles that make Brazilian Jiu Jitsu so effective.
                                 </div>
                             </div>
                         </div>
@@ -1579,11 +1671,17 @@
                         <div class="lineage-item animate-on-scroll">
                             <div class="lineage-dot"></div>
                             <div class="lineage-content">
-                                <img src="chris-nitta.jpg" alt="Chris Nitta" loading = "lazy" decoding="async" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; float: left; margin-right: 1.5rem; margin-bottom: 1rem; border: 3px solid var(--gold);">
+                                <img src="chris-nitta.jpg" alt="Chris Nitta" loading="lazy" decoding="async"
+                                    style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; float: left; margin-right: 1.5rem; margin-bottom: 1rem; border: 3px solid var(--gold);">
                                 <div class="lineage-name">Chris Nitta</div>
                                 <div class="lineage-title">Head Instructor, Ryuka Jiu Jitsu</div>
                                 <div class="lineage-description">
-                                    Sensei Chris Nitta is the head instructor at Ryuka Jiu Jitsu and continues this prestigious lineage in Hawaii. Training under Mike Fowler, Chris brings authentic Gracie Jiu Jitsu to Hawaii Judo Academy. His teaching combines traditional techniques with modern applications, ensuring students receive the highest quality instruction rooted in proven methodology. Chris is dedicated to developing both the technical and character aspects of his students.
+                                    Sensei Chris Nitta is the head instructor at Ryuka Jiu Jitsu and continues this
+                                    prestigious lineage in Hawaii. Training under Mike Fowler, Chris brings authentic
+                                    Gracie Jiu Jitsu to Hawaii Judo Academy. His teaching combines traditional
+                                    techniques with modern applications, ensuring students receive the highest quality
+                                    instruction rooted in proven methodology. Chris is dedicated to developing both the
+                                    technical and character aspects of his students.
                                 </div>
                             </div>
                         </div>
@@ -1596,49 +1694,61 @@
                 <div class="container">
                     <h2 class="section-title animate-on-scroll">Meet Our Instructors</h2>
                     <p class="section-subtitle animate-on-scroll">
-                        Our dedicated team of experienced instructors brings passion, expertise, and authentic Brazilian Jiu Jitsu knowledge to every class.
+                        Our dedicated team of experienced instructors brings passion, expertise, and authentic Brazilian
+                        Jiu Jitsu knowledge to every class.
                     </p>
-                    
+
                     <div class="card-grid">
-                         <div class="instructor-card animate-on-scroll">
+                        <div class="instructor-card animate-on-scroll">
                             <div class="instructor-avatar">
-                                <img src="Chris-Teaching-Kids.jpg" alt="Chris Nitta" loading = "lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                                <img src="Chris-Teaching-Kids.jpg" alt="Chris Nitta" loading="lazy" decoding="async"
+                                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
                             </div>
                             <div class="instructor-name">Sensei Chris Nitta</div>
                             <div class="instructor-title">Head Instructor & Owner</div>
-                            <p>Black belt under Mike Fowler, continuing the prestigious Gracie lineage in Hawaii. Chris brings authentic Brazilian Jiu Jitsu techniques combined with modern teaching methods to develop both technical skills and character in his students.</p>
+                            <p>Black belt under Mike Fowler, continuing the prestigious Gracie lineage in Hawaii. Chris
+                                brings authentic Brazilian Jiu Jitsu techniques combined with modern teaching methods to
+                                develop both technical skills and character in his students.</p>
                         </div>
 
-                         <div class="instructor-card animate-on-scroll">
+                        <div class="instructor-card animate-on-scroll">
                             <div class="instructor-avatar">
-                                <img src="Manny-Smiling.jpg" alt="Sensei Manny" loading = "lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                                <img src="Manny-Smiling.jpg" alt="Sensei Manny" loading="lazy" decoding="async"
+                                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
                             </div>
                             <div class="instructor-name">Sensei Manny</div>
                             <div class="instructor-title">Kids Instructor</div>
-                            <p>Dedicated to developing young martial artists through fun and engaging Brazilian Jiu Jitsu classes. Manny specializes in teaching fundamental techniques while building confidence and discipline in children.</p>
+                            <p>Dedicated to developing young martial artists through fun and engaging Brazilian Jiu
+                                Jitsu classes. Manny specializes in teaching fundamental techniques while building
+                                confidence and discipline in children.</p>
                         </div>
-                        
+
                         <div class="instructor-card animate-on-scroll">
                             <div class="instructor-avatar">
-                                <img src="Triple-Crown.jpg" alt="John Eagan" loading = "lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                                <img src="Triple-Crown.jpg" alt="John Eagan" loading="lazy" decoding="async"
+                                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
                             </div>
                             <div class="instructor-name">John Eagan</div>
                             <div class="instructor-title">No-Gi Instructor</div>
-                            <p>Purple Belt in Brazilian Jiu Jitsu under Chris Nitta. John brings competition experience to help students excel in no-gi environments.</p>
+                            <p>Purple Belt in Brazilian Jiu Jitsu under Chris Nitta. John brings competition experience
+                                to help students excel in no-gi environments.</p>
                         </div>
                         <div class="instructor-card animate-on-scroll">
                             <div class="instructor-avatar">
-                                <img src="Parker-Teaching.jpg" alt="Parker Paredes" loading = "lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                                <img src="Parker-Teaching.jpg" alt="Parker Paredes" loading="lazy" decoding="async"
+                                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
                             </div>
                             <div class="instructor-name">Parker Paredes</div>
                             <div class="instructor-title">Gi Instructor</div>
-                            <p>Purple Belt in Brazilian Jiu Jitsu under Chris Nitta. Parker brings competition experience to help students excel in gi environments.</p>
+                            <p>Purple Belt in Brazilian Jiu Jitsu under Chris Nitta. Parker brings competition
+                                experience to help students excel in gi environments.</p>
                         </div>
                     </div>
 
                     <!-- Instructor Video -->
                     <div class="video-container animate-on-scroll">
-                        <video controls poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23000000'/%3E%3Ccircle cx='400' cy='225' r='50' fill='%23FFD700' opacity='0.8'/%3E%3Cpolygon points='380,205 380,245 420,225' fill='%23000000'/%3E%3Ctext x='400' y='300' font-family='Arial' font-size='24' text-anchor='middle' fill='%23FFD700'%3EMeet Our Team%3C/text%3E%3C/svg%3E">
+                        <video controls
+                            poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23000000'/%3E%3Ccircle cx='400' cy='225' r='50' fill='%23FFD700' opacity='0.8'/%3E%3Cpolygon points='380,205 380,245 420,225' fill='%23000000'/%3E%3Ctext x='400' y='300' font-family='Arial' font-size='24' text-anchor='middle' fill='%23FFD700'%3EMeet Our Team%3C/text%3E%3C/svg%3E">
                             <!-- Add instructor introduction video here -->
                             <!-- <source src="instructor-intro.mp4" type="video/mp4"> -->
                         </video>
@@ -1654,9 +1764,11 @@
                 <div class="container">
                     <div class="quote-section animate-on-scroll">
                         <div class="japanese-quote">伝統に根ざし、絆で育つ</div>
-                        <div class="english-quote">"Dentō ni nezashi, kizuna de sodatsu" - Rooted in Tradition, Nurtutred by Community</div>
+                        <div class="english-quote">"Dentō ni nezashi, kizuna de sodatsu" - Rooted in Tradition,
+                            Nurtutred by Community</div>
                         <p style="margin-top: 2rem; color: rgba(255,255,255,0.8); font-size: 1.1rem;">
-                            The spirit of Brazilian Jiu Jitsu - resilience, perseverance, and continuous growth through challenges.
+                            The spirit of Brazilian Jiu Jitsu - resilience, perseverance, and continuous growth through
+                            challenges.
                         </p>
                     </div>
                 </div>
@@ -1667,63 +1779,74 @@
                 <div class="container">
                     <h2 class="section-title animate-on-scroll">Training Programs</h2>
                     <p class="section-subtitle animate-on-scroll">
-                        Comprehensive Brazilian Jiu Jitsu programs designed for all ages and skill levels, from beginner fundamentals to advanced competition training.
+                        Comprehensive Brazilian Jiu Jitsu programs designed for all ages and skill levels, from beginner
+                        fundamentals to advanced competition training.
                     </p>
-                <div class="card-grid">
-                    <div class="card animate-on-scroll">
-                        <img src="Kids-BJJ.jpg" alt="Kids BJJ Training" loading = "lazy" decoding="async" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
-                        <h3>Kids BJJ (Ages 6-12)</h3>
-                        <p>Fundamental movements, discipline, and confidence building through age-appropriate Brazilian Jiu Jitsu techniques.</p>
-                        <ul style="margin-top: 1rem; color: rgba(255,255,255,0.8); list-style: none;">
-                            <li>• Basic self-defense</li>
-                            <li>• Character development</li>
-                            <li>• Physical fitness</li>
-                            <li>• Anti-bullying skills</li>
-                        </ul>
+                    <div class="card-grid">
+                        <div class="card animate-on-scroll">
+                            <img src="Kids-BJJ.jpg" alt="Kids BJJ Training" loading="lazy" decoding="async"
+                                style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                            <h3>Kids BJJ (Ages 6-12)</h3>
+                            <p>Fundamental movements, discipline, and confidence building through age-appropriate
+                                Brazilian Jiu Jitsu techniques.</p>
+                            <ul style="margin-top: 1rem; color: rgba(255,255,255,0.8); list-style: none;">
+                                <li>• Basic self-defense</li>
+                                <li>• Character development</li>
+                                <li>• Physical fitness</li>
+                                <li>• Anti-bullying skills</li>
+                            </ul>
+                        </div>
+
+                        <div class="card animate-on-scroll">
+                            <img src="All_levels_Kendall.JPG" alt="All Levels BJJ Training" loading="lazy"
+                                decoding="async"
+                                style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                            <h3>All Levels Gi</h3>
+                            <p>High-level training for experienced practitioners focusing on competition techniques and
+                                advanced concepts.</p>
+                            <ul style="margin-top: 1rem; color: rgba(255,255,255,0.8); list-style: none;">
+                                <li>• Advanced submissions</li>
+                                <li>• Competition strategy</li>
+                                <li>• Flow training</li>
+                                <li>• Mental game development</li>
+                            </ul>
+                        </div>
+
+                        <div class="card animate-on-scroll">
+                            <img src="No-GI.jpg" alt="No-Gi BJJ Training" loading="lazy" decoding="async"
+                                style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                            <h3>No-Gi BJJ</h3>
+                            <p>Brazilian Jiu Jitsu without the traditional uniform, focusing on wrestling-based
+                                techniques and submissions.</p>
+                            <ul style="margin-top: 1rem; color: rgba(255,255,255,0.8); list-style: none;">
+                                <li>• Wrestling takedowns</li>
+                                <li>• Leg locks</li>
+                                <li>• Modern guard systems</li>
+                                <li>• MMA applications</li>
+                            </ul>
+                        </div>
+
+                        <div class="card animate-on-scroll">
+                            <img src="OpenMat.jpg" alt="Open Mat Training" loading="lazy" decoding="async"
+                                style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                            <h3>Open Mat</h3>
+                            <p>Free training time for all skill levels to practice techniques, drill, and engage in
+                                supervised sparring.</p>
+                            <ul style="margin-top: 1rem; color: rgba(255,255,255,0.8); list-style: none;">
+                                <li>• Free rolling</li>
+                                <li>• Technique drilling</li>
+                                <li>• Position sparring</li>
+                                <li>• Q&A with instructors</li>
+                            </ul>
+                        </div>
                     </div>
-                    
-                    <div class="card animate-on-scroll">
-                        <img src="All_levels_Kendall.JPG" alt="All Levels BJJ Training" loading = "lazy" decoding="async" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
-                        <h3>All Levels Gi</h3>
-                        <p>High-level training for experienced practitioners focusing on competition techniques and advanced concepts.</p>
-                        <ul style="margin-top: 1rem; color: rgba(255,255,255,0.8); list-style: none;">
-                            <li>• Advanced submissions</li>
-                            <li>• Competition strategy</li>
-                            <li>• Flow training</li>
-                            <li>• Mental game development</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="card animate-on-scroll">
-                        <img src="No-GI.jpg" alt="No-Gi BJJ Training" loading = "lazy" decoding="async" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
-                        <h3>No-Gi BJJ</h3>
-                        <p>Brazilian Jiu Jitsu without the traditional uniform, focusing on wrestling-based techniques and submissions.</p>
-                        <ul style="margin-top: 1rem; color: rgba(255,255,255,0.8); list-style: none;">
-                            <li>• Wrestling takedowns</li>
-                            <li>• Leg locks</li>
-                            <li>• Modern guard systems</li>
-                            <li>• MMA applications</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="card animate-on-scroll">
-                        <img src="OpenMat.jpg" alt="Open Mat Training" loading = "lazy" decoding="async" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
-                        <h3>Open Mat</h3>
-                        <p>Free training time for all skill levels to practice techniques, drill, and engage in supervised sparring.</p>
-                        <ul style="margin-top: 1rem; color: rgba(255,255,255,0.8); list-style: none;">
-                            <li>• Free rolling</li>
-                            <li>• Technique drilling</li>
-                            <li>• Position sparring</li>
-                            <li>• Q&A with instructors</li>
-                        </ul>
-                    </div>
-                </div>    
-                  
+
                     <div class="card animate-on-scroll" style="text-align: center; margin: 3rem 0;">
                         <h3>Ready to Visit?</h3>
-                        <p style="margin-bottom: 2rem;">Come see our facility and meet our team. Your first class is always free!</p>
+                        <p style="margin-bottom: 2rem;">Come see our facility and meet our team. Your first class is
+                            always free!</p>
                         <a href="#" class="cta-button" onclick="showSection('contact')">Schedule Your Free Trial</a>
-                </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1733,36 +1856,40 @@
             <div class="container" style="padding-top: 8rem;">
                 <h2 class="section-title animate-on-scroll">Find Us</h2>
                 <p class="section-subtitle animate-on-scroll">
-                    Located in the heart of Aiea, Hawaii, our dojo is easily accessible and provides a welcoming environment for all practitioners.
+                    Located in the heart of Aiea, Hawaii, our dojo is easily accessible and provides a welcoming
+                    environment for all practitioners.
                 </p>
-                
+
                 <!-- Location Information -->
-               <div class="location-info animate-on-scroll">
+                <div class="location-info animate-on-scroll">
                     <h3>Hawaii Judo Academy</h3>
-                    <p style="font-size: 1.3rem; margin-bottom: 2rem;"><strong>99-850 Iwaena St. Aiea, HI 96701</strong></p>
+                    <p style="font-size: 1.3rem; margin-bottom: 2rem;"><strong>99-850 Iwaena St. Aiea, HI 96701</strong>
+                    </p>
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
                         <div>
                             <strong style="color: var(--gold);">📞 Phone</strong><br>
-                            <a href="tel:8082230624" style="color: var(--white); text-decoration: none;">(808) 223-0624</a>
+                            <a href="tel:8082230624" style="color: var(--white); text-decoration: none;">(808)
+                                223-0624</a>
                         </div>
                         <div>
                             <strong style="color: var(--gold);">✉️ Email</strong><br>
-                            <a href="mailto:info@ryukajiujitsu.com" style="color: var(--white); text-decoration: none;">info@ryukajiujitsu.com</a>
+                            <a href="mailto:info@ryukajiujitsu.com"
+                                style="color: var(--white); text-decoration: none;">info@ryukajiujitsu.com</a>
                         </div>
                         <div>
                             <strong style="color: var(--gold);">🕒 Hours</strong><br>
-                            <a href="#" onclick="showSection('schedule')" style="color: var(--white); text-decoration: none; cursor: pointer; transition: all 0.3s ease;">See Schedule Tab</a>
+                            <a href="#" onclick="showSection('schedule')"
+                                style="color: var(--white); text-decoration: none; cursor: pointer; transition: all 0.3s ease;">See
+                                Schedule Tab</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Interactive Google Map -->
                 <div class="map-container animate-on-scroll">
-                    <iframe 
+                    <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.8947967935995!2d-157.92669068507435!3d21.38697848584029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006e1c8b8b8b8b%3A0x8b8b8b8b8b8b8b8b!2s99-850%20Iwaena%20St%2C%20Aiea%2C%20HI%2096701!5e0!3m2!1sen!2sus!4v1640000000000!5m2!1sen!2sus&q=99-850+Iwaena+St+Aiea+HI+96701"
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
 
@@ -1770,29 +1897,37 @@
                 <div class="location-details animate-on-scroll">
                     <div class="location-detail">
                         <h4>🚗 Driving Directions</h4>
-                        <p>Located in Aiea, easily accessible from major highways. Take H-1 West to Exit 13A (Aiea/Stadium). Follow Moanalua Road and turn right on Iwaena Street. Look for the Hawaii Judo Academy sign.</p>
+                        <p>Located in Aiea, easily accessible from major highways. Take H-1 West to Exit 13A
+                            (Aiea/Stadium). Follow Moanalua Road and turn right on Iwaena Street. Look for the Hawaii
+                            Judo Academy sign.</p>
                     </div>
-                    
+
                     <div class="location-detail">
                         <h4>🅿️ Parking Information</h4>
-                        <p>Free parking available on-site with ample spaces for students and visitors. Additional street parking is available on Iwaena Street. Please be respectful of neighboring businesses and residents.</p>
+                        <p>Free parking available on-site with ample spaces for students and visitors. Additional street
+                            parking is available on Iwaena Street. Please be respectful of neighboring businesses and
+                            residents.</p>
                     </div>
-                    
+
                     <div class="location-detail">
                         <h4>🚌 Public Transportation</h4>
-                        <p>Accessible via TheBus routes serving the Aiea area. Check the latest TheBus schedules for routes 11, 20, and 51 that service this location. The nearest bus stop is a short walk from our facility.</p>
+                        <p>Accessible via TheBus routes serving the Aiea area. Check the latest TheBus schedules for
+                            routes 11, 20, and 51 that service this location. The nearest bus stop is a short walk from
+                            our facility.</p>
                     </div>
-                    
+
                     <div class="location-detail">
                         <h4>🏢 Facility Features</h4>
-                        <p>Professional training mats, changing rooms, viewing area for parents, air conditioning, and a welcoming atmosphere designed for optimal learning and training in Brazilian Jiu Jitsu.</p>
+                        <p>Professional training mats, changing rooms, viewing area for parents, air conditioning, and a
+                            welcoming atmosphere designed for optimal learning and training in Brazilian Jiu Jitsu.</p>
                     </div>
                 </div>
 
                 <!-- Visit Us CTA -->
                 <div class="card animate-on-scroll" style="text-align: center; margin: 3rem 0;">
                     <h3>Ready to Visit?</h3>
-                    <p style="margin-bottom: 2rem;">Come see our facility and meet our team. Your first class is always free!</p>
+                    <p style="margin-bottom: 2rem;">Come see our facility and meet our team. Your first class is always
+                        free!</p>
                     <a href="#" class="cta-button" onclick="showSection('contact')">Schedule Your Free Trial</a>
                 </div>
             </div>
@@ -1803,9 +1938,10 @@
             <div class="container" style="padding-top: 8rem;">
                 <h2 class="section-title animate-on-scroll">Class Schedule</h2>
                 <p class="section-subtitle animate-on-scroll">
-                    Choose from our comprehensive schedule designed to accommodate all ages, skill levels, and busy lifestyles.
+                    Choose from our comprehensive schedule designed to accommodate all ages, skill levels, and busy
+                    lifestyles.
                 </p>
-                
+
                 <div class="schedule-container">
                     <!-- Schedule Tabs -->
                     <div class="schedule-tabs animate-on-scroll">
@@ -1964,23 +2100,28 @@
                     <div class="card-grid animate-on-scroll" style="margin-top: 4rem;">
                         <div class="card">
                             <h3>💰 Membership Options</h3>
-                            <p style="margin-bottom: 1rem;">Flexible membership plans to fit your training goals and schedule.</p>
-                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
-                                <div style="padding: 1rem; background: rgba(255,215,0,0.1); border-radius: 10px; text-align: center;">
+                            <p style="margin-bottom: 1rem;">Flexible membership plans to fit your training goals and
+                                schedule.</p>
+                            <div
+                                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
+                                <div
+                                    style="padding: 1rem; background: rgba(255,215,0,0.1); border-radius: 10px; text-align: center;">
                                     <strong style="color: var(--gold);">Unlimited</strong><br>
                                     <span style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">All Classes</span>
                                 </div>
-                                <div style="padding: 1rem; background: rgba(255,215,0,0.1); border-radius: 10px; text-align: center;">
+                                <div
+                                    style="padding: 1rem; background: rgba(255,215,0,0.1); border-radius: 10px; text-align: center;">
                                     <strong style="color: var(--gold);">Drop-In</strong><br>
                                     <span style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Single Class</span>
                                 </div>
-                                <div style="padding: 1rem; background: rgba(255,215,0,0.1); border-radius: 10px; text-align: center;">
+                                <div
+                                    style="padding: 1rem; background: rgba(255,215,0,0.1); border-radius: 10px; text-align: center;">
                                     <strong style="color: var(--gold);">Student</strong><br>
                                     <span style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Special Rates</span>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="card">
                             <h3>👥 What to Expect</h3>
                             <ul style="color: rgba(255,255,255,0.8); list-style: none; margin-top: 1rem;">
@@ -1991,7 +2132,7 @@
                                 <li>• All skill levels welcome</li>
                             </ul>
                         </div>
-                        
+
                         <div class="card">
                             <h3>📋 Class Policies</h3>
                             <ul style="color: rgba(255,255,255,0.8); list-style: none; margin-top: 1rem;">
@@ -2007,7 +2148,8 @@
                     <!-- Schedule CTA -->
                     <div class="card animate-on-scroll" style="text-align: center; margin: 3rem 0;">
                         <h3>Ready to Start Training?</h3>
-                        <p style="margin-bottom: 2rem;">Join us for a free trial class and experience the Ryuka difference!</p>
+                        <p style="margin-bottom: 2rem;">Join us for a free trial class and experience the Ryuka
+                            difference!</p>
                         <a href="#" class="cta-button" onclick="showSection('contact')">Book Your Free Trial</a>
                     </div>
                 </div>
@@ -2019,35 +2161,45 @@
             <div class="container" style="padding-top: 8rem;">
                 <h2 class="section-title animate-on-scroll">Get Started Today</h2>
                 <p class="section-subtitle animate-on-scroll">
-                    Ready to begin your Brazilian Jiu Jitsu journey? Contact us to schedule your free trial class and discover the Ryuka experience.
+                    Ready to begin your Brazilian Jiu Jitsu journey? Contact us to schedule your free trial class and
+                    discover the Ryuka experience.
                 </p>
                 <!-- Contact Methods -->
                 <div class="card-grid animate-on-scroll" style="margin: 4rem 0;">
                     <div class="card" style="text-align: center;">
-                        <div style="width: 100%; height: 150px; overflow: hidden; border-radius: 10px; margin-bottom: 1rem;">
-                            <img src="Team-NoGi.jpg" alt="Call Us" loading = "lazy" decoding="async" style="width: 100%; height: 150px; object-fit: cover;">
+                        <div
+                            style="width: 100%; height: 150px; overflow: hidden; border-radius: 10px; margin-bottom: 1rem;">
+                            <img src="Team-NoGi.jpg" alt="Call Us" loading="lazy" decoding="async"
+                                style="width: 100%; height: 150px; object-fit: cover;">
                         </div>
                         <h3>📞 Call Us</h3>
                         <p style="font-size: 1.3rem; margin: 1rem 0;">
-                            <a href="tel:8082230624" style="color: var(--gold); text-decoration: none;">(808) 223-0624</a>
+                            <a href="tel:8082230624" style="color: var(--gold); text-decoration: none;">(808)
+                                223-0624</a>
                         </p>
                         <p>Speak directly with our team to schedule your visit or ask questions about our programs.</p>
                     </div>
-                    
+
                     <div class="card" style="text-align: center;">
-                        <div style="width: 100%; height: 150px; overflow: hidden; border-radius: 10px; margin-bottom: 1rem;">
-                            <img src="Manny-Smiling.jpg" alt="Email Us" loading = "lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div
+                            style="width: 100%; height: 150px; overflow: hidden; border-radius: 10px; margin-bottom: 1rem;">
+                            <img src="Manny-Smiling.jpg" alt="Email Us" loading="lazy" decoding="async"
+                                style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                         <h3>✉️ Email Us</h3>
                         <p style="font-size: 1.3rem; margin: 1rem 0;">
-                            <a href="mailto:info@ryukajiujitsu.com" style="color: var(--gold); text-decoration: none;">info@ryukajiujitsu.com</a>
+                            <a href="mailto:info@ryukajiujitsu.com"
+                                style="color: var(--gold); text-decoration: none;">info@ryukajiujitsu.com</a>
                         </p>
-                        <p>Send us a message and we'll get back to you within 24 hours with all the information you need.</p>
+                        <p>Send us a message and we'll get back to you within 24 hours with all the information you
+                            need.</p>
                     </div>
-                    
+
                     <div class="card" style="text-align: center;">
-                        <div style="width: 100%; height: 150px; overflow: hidden; border-radius: 10px; margin-bottom: 1rem;">
-                            <img src="Class-Photo.png" alt="Visit Us" loading = "lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div
+                            style="width: 100%; height: 150px; overflow: hidden; border-radius: 10px; margin-bottom: 1rem;">
+                            <img src="Class-Photo.png" alt="Visit Us" loading="lazy" decoding="async"
+                                style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                         <h3>🏢 Visit Us</h3>
                         <p style="font-size: 1.3rem; margin: 1rem 0; color: var(--gold);">
@@ -2059,7 +2211,8 @@
 
                 <!-- Contact Form -->
                 <div class="contact-form animate-on-scroll">
-                    <h3 style="text-align: center; color: var(--gold); margin-bottom: 2rem; font-size: 1.8rem;">Start Your Free Trial</h3>
+                    <h3 style="text-align: center; color: var(--gold); margin-bottom: 2rem; font-size: 1.8rem;">Start
+                        Your Free Trial</h3>
                     <form id="contactForm">
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
                             <div class="form-group">
@@ -2103,7 +2256,8 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Tell us about your goals</label>
-                            <textarea id="message" name="message" rows="4" placeholder="What are you hoping to achieve through Brazilian Jiu Jitsu training? Any questions or special considerations?"></textarea>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="What are you hoping to achieve through Brazilian Jiu Jitsu training? Any questions or special considerations?"></textarea>
                         </div>
                         <button type="submit" class="submit-btn">Send Free Trial Request</button>
                     </form>
@@ -2112,26 +2266,32 @@
                     </p>
                 </div>
 
-                
+
                 <!-- FAQ Section -->
                 <div class="animate-on-scroll" style="margin: 4rem 0;">
-                    <h3 style="color: var(--gold); font-size: 2rem; text-align: center; margin-bottom: 2rem;">Frequently Asked Questions</h3>
+                    <h3 style="color: var(--gold); font-size: 2rem; text-align: center; margin-bottom: 2rem;">Frequently
+                        Asked Questions</h3>
                     <div class="card-grid">
                         <div class="card">
                             <h4 style="color: var(--gold); margin-bottom: 1rem;">Do I need experience to start?</h4>
-                            <p>Not at all! Our fundamentals classes are designed for complete beginners. We'll teach you everything you need to know from day one.</p>
+                            <p>Not at all! Our fundamentals classes are designed for complete beginners. We'll teach you
+                                everything you need to know from day one.</p>
                         </div>
                         <div class="card">
-                            <h4 style="color: var(--gold); margin-bottom: 1rem;">What should I wear to my first class?</h4>
-                            <p>Comfortable athletic clothes (t-shirt and shorts/leggings). We'll provide a gi for your first class if you decide to continue training.</p>
+                            <h4 style="color: var(--gold); margin-bottom: 1rem;">What should I wear to my first class?
+                            </h4>
+                            <p>Comfortable athletic clothes (t-shirt and shorts/leggings). We'll provide a gi for your
+                                first class if you decide to continue training.</p>
                         </div>
                         <div class="card">
                             <h4 style="color: var(--gold); margin-bottom: 1rem;">Is Brazilian Jiu Jitsu safe?</h4>
-                            <p>Yes! BJJ is one of the safest martial arts when practiced properly. Our instructors emphasize safety and controlled training at all times.</p>
+                            <p>Yes! BJJ is one of the safest martial arts when practiced properly. Our instructors
+                                emphasize safety and controlled training at all times.</p>
                         </div>
                         <div class="card">
                             <h4 style="color: var(--gold); margin-bottom: 1rem;">How often should I train?</h4>
-                            <p>We recommend 2-3 times per week for optimal progress, but you can start with once a week and increase as you build conditioning and technique.</p>
+                            <p>We recommend 2-3 times per week for optimal progress, but you can start with once a week
+                                and increase as you build conditioning and technique.</p>
                         </div>
                     </div>
                 </div>
@@ -2160,14 +2320,14 @@
 
     <script>
         // Loading screen
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             setTimeout(() => {
                 document.getElementById('loadingScreen').classList.add('hidden');
             }, 1000);
         });
 
         // Navigation functionality
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const navLinks = document.querySelectorAll('.nav-link');
             const sections = document.querySelectorAll('.content-section');
             const mobileToggle = document.getElementById('mobileToggle');
@@ -2176,13 +2336,13 @@
             const fabButton = document.getElementById('fabButton');
 
             // Mobile menu toggle
-            mobileToggle.addEventListener('click', function() {
+            mobileToggle.addEventListener('click', function () {
                 navMenu.classList.toggle('open');
             });
 
             // Navigation
             navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
+                link.addEventListener('click', function (e) {
                     e.preventDefault();
                     showSection(this.dataset.section);
                     navMenu.classList.remove('open');
@@ -2190,12 +2350,12 @@
             });
 
             // FAB button
-            fabButton.addEventListener('click', function() {
+            fabButton.addEventListener('click', function () {
                 showSection('contact');
             });
 
             // Header scroll effect
-            window.addEventListener('scroll', function() {
+            window.addEventListener('scroll', function () {
                 if (window.scrollY > 100) {
                     header.style.background = 'rgba(0, 0, 0, 0.95)';
                 } else {
@@ -2204,20 +2364,35 @@
             });
 
             // Smooth scrolling for home section links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    if (this.getAttribute('href').startsWith('#')) {
+            document.addEventListener('DOMContentLoaded', () => {
+                // Select all anchor links that start with a '#' but are not JUST a '#'.
+                document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        // Prevent the default browser jump.
                         e.preventDefault();
-                        const target = document.querySelector(this.getAttribute('href'));
-                        if (target) {
-                            target.scrollIntoView({
-                                behavior: 'smooth',
-                                block: 'start'
-                            });
+
+                        // Get the target element's ID from the href attribute.
+                        const targetId = this.getAttribute('href');
+
+                        try {
+                            const targetElement = document.querySelector(targetId);
+
+                            // If the target element exists, scroll to it smoothly.
+                            if (targetElement) {
+                                targetElement.scrollIntoView({
+                                    behavior: 'smooth',
+                                    block: 'start'
+                                });
+                            }
+                        } catch (error) {
+                            // Log an error if the selector is invalid for some reason,
+                            // but don't crash the entire script.
+                            console.error(`Error scrolling to target: ${targetId}`, error);
                         }
-                    }
+                    });
                 });
             });
+
 
             // Schedule tabs functionality
             const scheduleTabs = document.querySelectorAll('.schedule-tab');
@@ -2228,17 +2403,17 @@
             };
 
             scheduleTabs.forEach(tab => {
-                tab.addEventListener('click', function() {
+                tab.addEventListener('click', function () {
                     // Remove active class from all tabs
                     scheduleTabs.forEach(t => t.classList.remove('active'));
                     // Add active class to clicked tab
                     this.classList.add('active');
-                    
+
                     // Hide all schedule tables
                     Object.values(scheduleTable).forEach(table => {
                         table.style.display = 'none';
                     });
-                    
+
                     // Show selected schedule table
                     const selectedSchedule = this.dataset.schedule;
                     if (scheduleTable[selectedSchedule]) {
@@ -2253,7 +2428,7 @@
                 rootMargin: '0px 0px -50px 0px'
             };
 
-            const observer = new IntersectionObserver(function(entries) {
+            const observer = new IntersectionObserver(function (entries) {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
@@ -2267,10 +2442,10 @@
 
             // Video play functionality
             document.querySelectorAll('.play-button').forEach(button => {
-                button.addEventListener('click', function() {
+                button.addEventListener('click', function () {
                     const video = this.closest('.video-container').querySelector('video');
                     const overlay = this.closest('.video-overlay');
-                    
+
                     if (video.paused) {
                         video.play();
                         overlay.style.opacity = '0';
@@ -2282,9 +2457,9 @@
             });
 
             // Form submission
-            document.getElementById('contactForm').addEventListener('submit', function(e) {
+            document.getElementById('contactForm').addEventListener('submit', function (e) {
                 e.preventDefault();
-                
+
                 const formData = new FormData(this);
                 const firstName = formData.get('firstName');
                 const lastName = formData.get('lastName');
@@ -2293,7 +2468,7 @@
                 const program = formData.get('program');
                 const experience = formData.get('experience');
                 const message = formData.get('message') || 'No additional message';
-                
+
                 // Create email body
                 const emailBody = `New Free Trial Request from ${firstName} ${lastName}
 
@@ -2308,20 +2483,20 @@ Message:
 ${message}
 
 Please contact this potential student within 24 hours to schedule their free trial class.`;
-                
+
                 // Create mailto link
                 const mailtoLink = `mailto:info@ryukajiujitsu.com?subject=Free Trial Request - ${firstName} ${lastName}&body=${encodeURIComponent(emailBody)}`;
-                
+
                 // Show success message
                 showNotification(`Thank you ${firstName}! Your free trial request has been submitted. We'll contact you within 24 hours.`, 'success');
-                
+
                 // Optionally open email client
                 setTimeout(() => {
                     if (confirm('Would you like to send this information via your email client as backup?')) {
                         window.location.href = mailtoLink;
                     }
                 }, 2000);
-                
+
                 // Clear form
                 this.reset();
             });
@@ -2333,17 +2508,17 @@ Please contact this potential student within 24 hours to schedule their free tri
         function showSection(sectionId) {
             const navLinks = document.querySelectorAll('.nav-link');
             const sections = document.querySelectorAll('.content-section');
-            
+
             // Remove active classes
             navLinks.forEach(l => l.classList.remove('active'));
             sections.forEach(s => s.classList.remove('active'));
-            
+
             // Show selected section
             const targetSection = document.getElementById(sectionId);
             if (targetSection) {
                 targetSection.classList.add('active');
             }
-            
+
             // Set active nav link
             const activeLink = document.querySelector(`[data-section="${sectionId}"]`);
             if (activeLink) {
@@ -2371,9 +2546,9 @@ Please contact this potential student within 24 hours to schedule their free tri
                 box-shadow: 0 10px 30px rgba(0,0,0,0.3);
             `;
             notification.textContent = message;
-            
+
             document.body.appendChild(notification);
-            
+
             setTimeout(() => {
                 notification.style.animation = 'slideOutRight 0.3s ease';
                 setTimeout(() => {
@@ -2418,12 +2593,12 @@ Please contact this potential student within 24 hours to schedule their free tri
                 this.isPlaying = true;
                 this.autoPlayInterval = null;
                 this.autoPlayDuration = 5000;
-                
+
                 if (this.slides.length > 0) {
                     this.init();
                 }
             }
-            
+
             init() {
                 this.createDots();
                 this.bindEvents();
@@ -2431,12 +2606,12 @@ Please contact this potential student within 24 hours to schedule their free tri
                 this.startAutoPlay();
                 this.resetProgressBar();
             }
-            
+
             // Rest of the slideshow JavaScript from the artifact
         }
         // Initialize slideshow when section is shown
         const originalShowSection = showSection;
-        showSection = function(sectionId) {
+        showSection = function (sectionId) {
             originalShowSection(sectionId);
             if (sectionId === 'home') {
                 setTimeout(() => {
@@ -2446,57 +2621,57 @@ Please contact this potential student within 24 hours to schedule their free tri
                 }, 100);
             }
         };
-       // Hero Background Slideshow
+        // Hero Background Slideshow
         class HeroSlideshow {
             constructor() {
                 this.slides = document.querySelectorAll('.hero-slide');
                 this.currentSlide = 0;
                 this.slideInterval = 4000; // 4 seconds per slide
-                
+
                 if (this.slides.length > 0) {
                     this.start();
                 }
             }
-            
+
             start() {
                 setInterval(() => {
                     this.nextSlide();
                 }, this.slideInterval);
             }
-            
+
             nextSlide() {
                 // Remove active class from current slide
                 this.slides[this.currentSlide].classList.remove('active');
-                
+
                 // Move to next slide
                 this.currentSlide = (this.currentSlide + 1) % this.slides.length;
-                
+
                 // Add active class to new slide
                 this.slides[this.currentSlide].classList.add('active');
             }
         }
 
         // Initialize hero slideshow
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             new HeroSlideshow();
-        }); 
-      // Enhanced image loading and quality
-        document.addEventListener('DOMContentLoaded', function() {
+        });
+        // Enhanced image loading and quality
+        document.addEventListener('DOMContentLoaded', function () {
             // Preload critical images
             const criticalImages = [
-                'Class-Photo_waifu2x_art_noise1_scale.png',
+                'Class-Photo.png',
                 'Manny-Promotion_waifu2x_art_noise1_scale.png',
                 'Chris-Teaching-Kids.jpg'
             ];
-            
+
             criticalImages.forEach(src => {
                 const img = new Image();
                 img.src = src;
             });
-            
+
             // Lazy load non-critical images
             const lazyImages = document.querySelectorAll('img[loading="lazy"]');
-            
+
             const imageObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -2506,9 +2681,10 @@ Please contact this potential student within 24 hours to schedule their free tri
                     }
                 });
             });
-            
+
             lazyImages.forEach(img => imageObserver.observe(img));
         });  
     </script>
 </body>
+
 </html>
